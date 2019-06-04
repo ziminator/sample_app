@@ -29,3 +29,19 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Полную информацию об игнорировании файлов ищите по адресу:
+# https://help.github.com/articles/ignoring-files
+# Если понадобится игнорировать файлы, созданные текстовым редактором или операционной
+# системой, возможно, лучше добавить их в глобальный список игнорирования
+# git config --global core.excludesfile '~/.gitignore_global'
+# Игнорировать конфигурацию компоновщика
+  #   /.bundle
+# Игнорировать базу данных SQLite по умолчанию
+  #   /db/*.sqlite3
+  #   /db/*.sqlite3-journal
+# Игнорировать все журналы и временные файлы
+  #   /log/*.log
+  #   /tmp
+# Игнорировать файлы Spring
+/spring/*.pid
