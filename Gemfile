@@ -6,6 +6,7 @@ ruby '2.6.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use Puma as the app server
+gem 'image_processing'
 gem 'bootstrap-sass'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -19,6 +20,8 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
+gem 'mini_magick'
+gem 'active_storage_validations'
 gem 'bcrypt', '~> 3.1.7'
 gem 'faker'
 gem 'will_paginate'
@@ -51,4 +54,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   gem 'pg'
+  gem 'aws-sdk-s3', '1.46.0', require: false
 end
