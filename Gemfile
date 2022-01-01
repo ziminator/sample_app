@@ -26,6 +26,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'slim-rails'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
