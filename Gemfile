@@ -27,6 +27,7 @@ gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'slim-rails'
+gem 'activeadmin'
 gem 'devise'
 
 # Use Active Storage variant
