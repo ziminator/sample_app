@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  #devise_for :users
 
   #devise_for :users, path_names: { sign_up: :signup, sign_in: :login, sign_out: :logout }
-  #devise_for :users, path_names: { sign_in: :login, sign_out: :logout }
+  devise_for :users, path: :/, path_names: { sign_in: :login, sign_out: :logout }
 
   root    'static_pages#home'
   get     '/help',    to: 'static_pages#help'
@@ -12,14 +12,14 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  get 'password_resets/new'
-  get 'password_resets/edit'
-  get 'sessions/new'
+  #get 'password_resets/new'
+  #get 'password_resets/edit'
+  #get 'sessions/new'
 
   #get     '/signup',  to: 'users#new'
   #get     '/login',   to: 'sessions#new'
-  post    '/login',   to: 'sessions#create'
-  delete  '/logout',  to: 'sessions#destroy'
+  #post    '/login',   to: 'sessions#create'
+  #delete  '/logout',  to: 'sessions#destroy'
 
   resources :users do
     member do
