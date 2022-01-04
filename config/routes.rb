@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   #devise_for :users
 
-  #devise_for :users, path_names: { sign_up: :signup, sign_in: :login, sign_out: :logout }
-  devise_for :users, path: :/, path_names: { sign_in: :login, sign_out: :logout }
+  devise_for :users, path: :/, path_names: { sign_in: :login, sign_up: :signup, sign_out: :logout }
 
   root    'static_pages#home'
   get     '/help',    to: 'static_pages#help'
@@ -26,8 +25,8 @@ Rails.application.routes.draw do
       get :following, :followers
     end
   end
-  resources :account_activations, only: [:edit]
-  resources :password_resets,     only: [:new, :create, :edit, :update]
+  #resources :account_activations, only: [:edit]
+  #resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :microposts,          only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
 end
