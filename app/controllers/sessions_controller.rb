@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   before_action :authenticate_user!
 
+=begin
   def new
   end
 
@@ -28,3 +29,4 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 end
+=end

@@ -15,7 +15,6 @@ header.navbar.navbar-fixed-top.navbar-inverse
           ul.nav.navbar-nav.navbar-right
             li= link_to "Home", root_path
             li= link_to "Help", help_path
-            /- if logged_in?
             - if user_signed_in?
               li= link_to "Users", users_path
               li.dropdown
@@ -27,11 +26,9 @@ header.navbar.navbar-fixed-top.navbar-inverse
                   li= link_to "Settings", edit_user_registration_path(current_user)
                   - if current_user.admin
                     li.divider
-                    li= link_to "Admin profile", "#"
+                    li= link_to "Admin profile", 'http://localhost:3000/admin/login', target: '_blank'
                   li.divider
                   li
-                    /= link_to "Log out", logout_path, method: :delete
                     = link_to "Log out", destroy_user_session_path, method: :delete
             - else
               li= link_to "Log in", new_user_session_path
-              /li= link_to "Log in", login_path
