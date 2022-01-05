@@ -29,6 +29,7 @@ gem 'bootstrap-will_paginate'
 gem 'slim-rails'
 gem 'activeadmin'
 gem 'devise'
+gem 'simple_form'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
