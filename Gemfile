@@ -28,6 +28,7 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'slim-rails'
 gem 'activeadmin'
+gem 'inherited_resources'
 gem 'devise'
 gem 'simple_form'
 

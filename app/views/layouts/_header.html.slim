@@ -25,6 +25,9 @@ header.navbar.navbar-fixed-top.navbar-inverse
                 ul.dropdown-menu
                   li= link_to "Profile", current_user
                   li= link_to "Settings", edit_user_registration_path(current_user)
+                  - if current_user.admin
+                    li.divider
+                    li= link_to "Admin profile", "#"
                   li.divider
                   li
                     /= link_to "Log out", logout_path, method: :delete
