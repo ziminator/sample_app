@@ -22,11 +22,19 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 gem 'mini_magick'
 gem 'active_storage_validations'
-gem 'bcrypt', '~> 3.1.7'
+# gem 'bcrypt', '~> 3.1.7'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'slim-rails'
+gem 'kaminari'
+gem 'inherited_resources'
+gem 'devise'
+gem 'activeadmin'
+gem 'draper'
+gem 'cancancan'
+gem 'pundit'
+gem 'simple_form'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -48,6 +56,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'letter_opener_web'
 end
 
 group :production do
